@@ -1,0 +1,79 @@
+body {
+  background-color: pink;
+  position: relative;
+  font-family: "Delicious Handrawn", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.calculator {
+  padding: 5px;
+  width: max-content;
+  background-color: rgb(208, 145, 208);
+  border: 3px solid rgb(119, 54, 54);
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  grid-template-rows: repeat(6, 50px);
+  row-gap: 5px;
+  column-gap: 10px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+}
+
+.calculator2 {
+  width: 306px;
+  height: 335px;
+  border: 3px solid rgb(119, 54, 54);
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  grid-template-rows: repeat(6, 50px);
+  row-gap: 5px;
+  column-gap: 10px;
+  background-color: #8e61b2;
+  position: absolute;
+  top: 52px;
+  left: 50px;
+  box-shadow: 3px 3px 3px 3px rgb(255, 224, 224);
+}
+
+.calculator__screen {
+  background-color: rgb(221, 225, 210);
+  border: 3px solid rgb(119, 54, 54);
+  border-radius: 15px 15px 0px 0px;
+  box-shadow: inset 3px 3px 3px 2px rgb(155, 139, 139);
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: end;
+  font-size: 40px;
+}
+
+.buttonEquals {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+.buttonPlus {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+
+button {
+  border-radius: 8px;
+  background: linear-gradient(#d87575, #9198e5);
+}
+
+.tx-b{
+  font-weight: 700;
+}
+
+
